@@ -1,0 +1,50 @@
+jboss-cli.bat --connect command=:shutdown # Windows
+jboss-cli.sh --connect command=:shutdown # Unix / Linux
+
+[disconnected /] connect 192.168.1.10
+Connected to 192.168.1.10:9999
+[192.168.1.10:9999 /] :shutdown
+
+[disconnected /] connect 
+Connected to localhost:9999
+[localhost:9999 /] :reload
+
+
+Log4j: It is a flexible open source logging library from Apache. Log4j is 
+widely used in the open source community, and it was the default logging 
+implementation on earlier releases of JBoss AS.
+JBoss logging framework is substantially based on JUL, which is built around three 
+main concepts: loggers, handlers, and formatters.
+
+
+For loggin Admin console:-
+--------------------------
+<role rolename="manager-gui"/>
+<user username="tomcat" password="s3cret" roles="manager-gui"/>
+
+
+SSL configuration:-
+--------------------
+Add line no:87
+<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+               maxThreads="150" SSLEnabled="true">
+        <SSLHostConfig>
+            <Certificate certificateKeystoreFile="C:\sslkey\demokey.jks"
+                         type="RSA" 
+						 certificateKeystorePassword="Admin@123"
+						 />
+        </SSLHostConfig>
+    </Connector>
+	
+tomcat/webapps/manager/WEB-INF/web.xml:-(it will automatically redirect to https)
+--------------------------------------
+Add line no:130
+<user-data-constraint>
+<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+</user-data-constraint>
+
+Shoilahamad.info@gmail.com
+Shoil@0123
+
+Accenture
+C10659287

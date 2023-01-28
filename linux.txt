@@ -1,0 +1,95 @@
+1. TO MOVE FROM ONE PLACE TO ANOTHER PLACE =  cd
+2.  BACKSPACE= cd..
+3. for multiple /depends= cd ../..
+4. inside folder/directory=ls ls-ltr ls-lrt ls-l
+5.to create directory/folder=mkdir directoryname
+                             mkdir jeevitha
+6.to create file= cat>filename.txt
+                  cat>gv.txt 
+                  touch gv.txt
+7.copy directory=cp -r
+8.how copyone place to another directory=cp gv.txt/opt/jeevitha
+9.cut or rename =mv oldfilename newfilename ex: mv gv.txt gvtha.txt
+10.cut or paste into directory=mv filename/opt/directoryname  ex:mv gv.txt/opt/gvtha
+11.to move starting place=cd --
+12.switch user=sudo su
+13.clear screen=clear or ctrl+l
+14.to stop=ctrl+t
+15.open a file=vi filename ex: vi gv.txt
+               vim filename
+16. to come out from editing move=shift+esc
+17.save and quit=:wq
+18.to quit=:q
+19.remove file =rm filenae ex:rm jv.txt
+20.to remove complete directory= rm -r directory name
+21.delete the directory and files=rm -rf directoryname
+
+
+TO CHANGE A HOSTNAME: hostname name
+1.how to find portno or processid=netstat -antp|grep 9990
+2.how to find all portno or pid=netstat -plnt
+3.how to check java version=java -version
+4.how to find linux version=cat /etc/redhat/-release
+5.how to find free memory or how much it consumed=free -m
+6.how to find diskusage or avail usage or used disk=df -h
+
+
+find comments:
+1.to find all the name=find /name
+2.find all files such as file names=find /tmp -type f -name "*.txt" (for all)
+exact files= find /tmp -type f -name "gv.txt"
+3.how to append filename in linux=cat "filename1">>"filename2"
+                                  cat "gv.txt">>"gv2.txt"
+4.find and replace=sed 's oldstring/newstring g' filename
+                   sed 's diary/journal g' gv.txt
+5.for multiple=sed 's oldstring/newstring g' filenames
+6.how to create user=username add
+                     username tomgal
+7.how to create password=passwd username ex:passwd tomgal
+8.how to check which user=who iam 
+9.how many user login account=who -q
+10.how to add that user to group=username -ag groupname username
+                                =username -ag docker tomgal
+
+
+
+1.how to find ipconfig for windows=ipconfig
+                       for linux=ifconfig
+in linux diff btwn green and blue highlights is green has all permissions and blue has limited permissions
+
+
+COMMANDPROMPTS:
+1. to open commandprompt=windows+R
+               to lock= windows+L
+2.to downloaded one shows in window=ctrl+J
+3.browsing history=ctrl+h
+4.status code and n/w=ctrl+shift+I
+5.windows=cls
+6.to see inside=dir
+
+
+HOW to change prompt title= title name
+to change prompt=prompt name
+ex:prompt name$G
+2. to find a font color= help color
+3.to change a bg fc=color 01 or color 05..........
+
+
+to find wifi password:
+go to =net sh
+netsh>wlan show properties
+netsh>profile profilename ex:profile redmi
+to copy=gh>ipconfig  |  clip
+
+how many tasks running in this box=tasklist  
+2. to redirect commandprompt to google=start www.google.com
+ another flipkart ,amazon=start flipkart
+to know the ipadd for so & so company =ping www.flipkart.com
+
+
+how to hide files in window
+attri +h +s +r filename
+ to show =attri -h -s -r filename
+
+
+

@@ -1,0 +1,14 @@
+<profile>
+        <subsystem xmlns="urn:jboss:domain:logging:8.0">
+            <console-handler name="CONSOLE">
+                <level name="INFO"/>
+                <formatter>
+                    <named-formatter name="COLOR-PATTERN"/>
+                </formatter>
+            </console-handler>
+
+
+
+
+
+/subsystem-logging/root-logger=ROOT:write-attribute(name=level, value=INFO)
